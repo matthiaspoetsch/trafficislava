@@ -1,10 +1,10 @@
 backend:
-  name: github                                                         
-  repo: matthiaspoetsch/trafficislava                                  
-  branch: main                                     
-                                            
+  name: github
+  repo: matthiaspoetsch/trafficislava
+  branch: main
+
 # Where uploaded images are stored
-media_folder: assets/images
+media_folder: lava/assets/images
 
 collections:
   - name: rides
@@ -12,7 +12,7 @@ collections:
     files:
       - name: rides
         label: All Rides
-        file: assets/rides.json
+        file: lava/assets/rides.json
         fields:
           - name: rides
             label: Rides
