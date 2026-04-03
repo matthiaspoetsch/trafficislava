@@ -115,7 +115,12 @@ function openModal(ride) {
 
   // Komoot embed — iframe if URL present, placeholder otherwise
   if (d.komoot) {
-    modalMap.innerHTML = `<iframe src="${d.komoot}" title="Komoot route map" loading="lazy" allowfullscreen></iframe>`;
+    // On mobile: strip elevation profile to show map only
+    const isMobile = window.matchMedia('(max-width: 560px)').matches;
+    const komootSrc = isMobile
+      ? d.komoot.replace(/([?&])profile=\d+/, '$1').replace(/[?&]$/, '')
+      : d.komoot;
+    modalMap.innerHTML = `<iframe src="${komootSrc}" title="Komoot route map" loading="lazy" allowfullscreen></iframe>`;
   } else {
     modalMap.innerHTML = `
       <div class="ride-modal__map-placeholder">

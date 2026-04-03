@@ -1470,11 +1470,6 @@ body::after {
 
   .ride-modal__map { height: 280px; }
 
-  .ride-modal__map iframe {
-    height: 100%;
-    margin-top: 0;
-  }
-
   .ride-modal__links { grid-template-columns: 1fr; }
 }
 
