@@ -1,7 +1,8 @@
 backend:
-  name: git-gateway
-  branch: main
-
+  name: github                                                         
+  repo: matthiaspoetsch/trafficislava                                  
+  branch: main                                     
+                                            
 # Where uploaded images are stored
 media_folder: assets/images
 
