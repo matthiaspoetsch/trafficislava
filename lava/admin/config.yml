@@ -1,0 +1,55 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Where uploaded images are stored
+media_folder: assets/images
+
+collections:
+  - name: rides
+    label: Rides
+    files:
+      - name: rides
+        label: All Rides
+        file: assets/rides.json
+        fields:
+          - name: rides
+            label: Rides
+            label_singular: Ride
+            widget: list
+            summary: "{{fields.date}} — {{fields.title}}"
+            fields:
+              - { name: title,       label: Title,            widget: string }
+              - name: type
+                label: Type
+                widget: select
+                options:
+                  - { label: "Morning Ride (Mon, 6:30–8:30)", value: "Morning Ride" }
+                  - { label: "Sunday Ride (mid-month, 08:00–12:00)", value: "Sunday Ride" }
+              - name: status
+                label: Status
+                widget: select
+                options:
+                  - { label: "Upcoming", value: "upcoming" }
+                  - { label: "Past",     value: "past" }
+              - name: date
+                label: Date
+                widget: datetime
+                format: "YYYY-MM-DD"
+                date_format: "YYYY-MM-DD"
+                time_format: false
+                picker_utc: true
+              - { name: time,        label: "Time (e.g. 6:30 — 8:30)",          widget: string }
+              - { name: meet,        label: "Meeting Point",                      widget: string }
+              - { name: distance,    label: "Distance (e.g. ~30 km)",             widget: string }
+              - { name: description, label: Description,                           widget: text }
+              - name: komoot
+                label: "Komoot Embed URL"
+                widget: string
+                required: false
+                hint: "Paste the embed URL from Komoot (Share → Embed → copy iframe src). Leave blank to hide."
+              - name: strava
+                label: "Strava Event URL"
+                widget: string
+                required: false
+                hint: "Paste the full Strava club event URL. Leave blank to hide."

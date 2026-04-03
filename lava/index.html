@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traffic Is Lava — Gravel Rides in Vienna</title>
+  <meta name="description" content="Bi-weekly off-road cycling through Vienna's forests. No traffic. No noise. No pressure.">
+  <meta property="og:title" content="Traffic Is Lava">
+  <meta property="og:description" content="Bi-weekly gravel rides in Vienna. No traffic. No noise. No pressure.">
+  <meta property="og:type" content="website">
+
+  <!-- =====================================================
+    ASSET SLOT: Brand fonts
+    When brand fonts are available:
+    1. Place .woff2 files in assets/fonts/
+    2. Add @font-face rules in styles/main.css (see README)
+    3. Remove or comment out the Google Fonts <link> tags below
+  ====================================================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/main.css">
+
+  <!-- Netlify Identity (required for CMS login) -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+
+  <!-- =====================================================
+    NAVIGATION
+  ====================================================== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+
+      <a href="#home" class="nav__logo" aria-label="Traffic Is Lava — back to top">
+        <img class="nav__logo-mark" src="assets/Icon-2.svg" alt="" width="28" height="28" aria-hidden="true">
+        <span class="nav__wordmark">Traffic Is Lava</span>
+      </a>
+
+      <nav class="nav__links" id="nav-links" aria-label="Main navigation">
+        <a href="#about" class="nav__link">About</a>
+        <a href="#rides" class="nav__link">Rides</a>
+        <a href="#join" class="nav__link nav__link--cta">Join the ride</a>
+      </nav>
+
+      <button class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- =====================================================
+      SECTION 1: HERO
+    ====================================================== -->
+    <section id="home" class="section section--hero">
+
+      <!-- Full-bleed background image -->
+      <div class="hero__bg" aria-hidden="true">
+        <img src="assets/images/hero-background.jpg" alt="">
+      </div>
+
+      <!-- Gradient overlays: dark at top (nav), dark at bottom (logo) -->
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <!-- Content — vertically centered -->
+      <div class="hero__inner">
+        <div class="hero__content-block">
+
+          <p class="hero__eyebrow label mono">Vienna &thinsp;/&thinsp; Gravel &thinsp;/&thinsp; 2&times; Monthly</p>
+
+          <div class="hero__logo-wrap">
+            <img class="hero__logo" src="assets/logo/Logo-Web-White.svg" alt="Traffic Is Lava">
+          </div>
+
+          <p class="hero__sub">Bi-weekly rides. No traffic. No pressure. Everyone welcome.</p>
+
+        </div>
+      </div>
+
+      <!-- Ride format summary bar -->
+      <div class="hero__formats" aria-label="Ride formats overview">
+        <div class="hero__format">
+          <span class="label mono hero__format-label">01 &mdash; Morning Ride</span>
+          <span class="hero__format-detail mono">1st Monday &middot; 6:30&thinsp;&rarr;&thinsp;8:30 &middot; ~2h &middot; ~30km</span>
+        </div>
+        <div class="hero__format-rule" aria-hidden="true"></div>
+        <div class="hero__format">
+          <span class="label mono hero__format-label">02 &mdash; Sunday Ride</span>
+          <span class="hero__format-detail mono">Mid-month Sunday &middot; 08:00&thinsp;&rarr;&thinsp;12:00 &middot; ~4h &middot; ~60km</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- =====================================================
+      SECTION 2: ABOUT
+    ====================================================== -->
+    <section id="about" class="section section--about">
+      <div class="section__inner">
+
+        <header class="about__header fade-in">
+          <p class="section__num label mono">02</p>
+          <h2 class="about__headline">Ride the<br>gaps in between.</h2>
+        </header>
+
+        <div class="about__body">
+
+          <div class="about__text fade-in">
+            <p class="about__intro">Traffic Is Lava started with one idea: the best riding is everywhere the city isn't. Through forests, over gravel, in the hour before the day fills up.</p>
+            <p>This is not a sports club. There are no rankings, no intervals, no segments to chase. It's a recurring moment to move through nature with other people who feel the same way about traffic.</p>
+            <p>Twice a month, we leave the city behind. The rides are accessible, the pace is conversational, and the routes are chosen for scenery, not speed.</p>
+          </div>
+
+          <div class="about__formats fade-in">
+
+            <div class="format-card">
+              <div class="format-card__head">
+                <span class="label mono format-card__num">01</span>
+                <span class="format-card__name">Morning Ride</span>
+              </div>
+              <p class="format-card__tagline">Forest bath to kickstart the month.</p>
+              <dl class="spec-list">
+                <div class="spec-row">
+                  <dt>WHEN</dt>
+                  <dd>1st Monday, monthly</dd>
+                </div>
+                <div class="spec-row">
+                  <dt>TIME</dt>
+                  <dd>6:30 &mdash; 8:30</dd>
+                </div>
+                <div class="spec-row">
+                  <dt>DURATION</dt>
+                  <dd>2 hours</dd>
+                </div>
+                <div class="spec-row">
+                  <dt>TERRAIN</dt>
+                  <dd>Gravel / Forest trail</dd>
+                </div>
+                <div class="spec-row">
+                  <dt>DISTANCE</dt>
+                  <dd>~25&thinsp;&ndash;&thinsp;35 km</dd>
+                </div>
+              </dl>
+            </div>
+
+            <div class="format-card">
+              <div class="format-card__head">
+                <span class="label mono format-card__num">02</span>
+                <span class="format-card__name">Sunday Ride</span>
+              </div>
+              <p class="format-card__tagline">Beautiful routes, beautiful light, beautiful energy.</p>
+              <dl class="spec-list">
+                <div class="spec-row">
+                  <dt>WHEN</dt>
+                  <dd>Mid-month Sunday</dd>
+                </div>
+                <div class="spec-row">
+                  <dt>TIME</dt>
+                  <dd>08:00 &mdash; 12:00</dd>
+                </div>
+                <div class="spec-row">
+                  <dt>DURATION</dt>
+                  <dd>~4 hours</dd>
+                </div>
+                <div class="spec-row">
+                  <dt>TERRAIN</dt>
+                  <dd>Gravel / Scenic route</dd>
+                </div>
+                <div class="spec-row">
+                  <dt>DISTANCE</dt>
+                  <dd>~50&thinsp;&ndash;&thinsp;70 km</dd>
+                </div>
+              </dl>
+            </div>
+
+          </div><!-- /.about__formats -->
+
+        </div><!-- /.about__body -->
+
+        <!-- =====================================================
+          ASSET SLOT: About image
+          Replace this <figure> with:
+          <figure class="about__image">
+            <img src="assets/images/about.jpg" alt="Group of cyclists on a gravel path through Vienna's Wienerwald">
+          </figure>
+          File: assets/images/about.jpg
+          Recommended: landscape, ~1600×900px, group ride or forest scenery
+        ====================================================== -->
+        <figure class="about__image img-placeholder fade-in" data-slot="about" aria-hidden="true">
+          <div class="img-placeholder__info">
+            <span class="mono">assets/images/about.jpg</span>
+            <span class="mono">Landscape · 1600 × 900</span>
+          </div>
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- =====================================================
+      SECTION 3: RIDES
+    ====================================================== -->
+    <section id="rides" class="section section--rides">
+      <div class="section__inner">
+
+        <header class="section__header fade-in">
+          <p class="section__num label mono">03</p>
+          <h2 class="section__headline">Upcoming rides</h2>
+          <p class="section__sub">
+            Join via <a href="#join">Strava or Signal</a> for route details and updates.
+          </p>
+        </header>
+
+        <!-- Rides are loaded from assets/rides.json — edit them at /admin -->
+
+        <!-- Upcoming rides: featured card + secondary list rendered by JS -->
+        <div id="upcoming-rides-container" aria-live="polite" aria-label="Upcoming rides"></div>
+
+        <!-- Past rides: collapsed by default, toggled by JS -->
+        <div class="rides__past" id="past-rides-section">
+          <button class="rides__past-toggle" id="past-rides-toggle"
+                  aria-expanded="false" aria-controls="past-rides-container">
+            Past rides <span id="past-rides-count"></span>
+            <span class="rides__past-arrow" aria-hidden="true">↓</span>
+          </button>
+          <div id="past-rides-container" class="rides__past-list" hidden></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================
+      SECTION 4: JOIN
+    ====================================================== -->
+    <section id="join" class="section section--join">
+      <div class="section__inner">
+
+        <header class="section__header fade-in">
+          <p class="section__num label mono">04</p>
+          <h2 class="section__headline section__headline--light">Ride with us.</h2>
+          <p class="section__sub section__sub--muted">Join on any platform. Route details and updates go out on all three.</p>
+        </header>
+
+        <div class="join__grid fade-in">
+
+          <!-- =====================================================
+            ASSET SLOT: Strava URL
+            Replace href with your actual Strava club URL
+            Example: href="https://www.strava.com/clubs/traffic-is-lava"
+          ====================================================== -->
+          <a href="https://www.strava.com/" class="join__card" target="_blank" rel="noopener noreferrer">
+            <div class="join__card-top">
+              <span class="join__platform label mono">Strava</span>
+              <span class="join__arrow" aria-hidden="true">→</span>
+            </div>
+            <p class="join__desc">Club feed, route files, and ride stats. This is where the rides live.</p>
+            <span class="join__handle mono">Traffic Is Lava Club</span>
+          </a>
+
+          <!-- =====================================================
+            ASSET SLOT: Signal group link
+            Replace href with your actual Signal group invite link
+            Example: href="https://signal.group/#YOUR_INVITE_CODE"
+          ====================================================== -->
+          <a href="https://signal.group/" class="join__card" target="_blank" rel="noopener noreferrer">
+            <div class="join__card-top">
+              <span class="join__platform label mono">Signal</span>
+              <span class="join__arrow" aria-hidden="true">→</span>
+            </div>
+            <p class="join__desc">Last-minute updates, weather calls, and meet-up coordination.</p>
+            <span class="join__handle mono">Join Group Chat</span>
+          </a>
+
+          <!-- =====================================================
+            ASSET SLOT: Instagram URL
+            Replace href with your actual Instagram profile URL
+            Example: href="https://www.instagram.com/trafficislava"
+            Update the @handle below to match your actual username
+          ====================================================== -->
+          <a href="https://www.instagram.com/" class="join__card" target="_blank" rel="noopener noreferrer">
+            <div class="join__card-top">
+              <span class="join__platform label mono">Instagram</span>
+              <span class="join__arrow" aria-hidden="true">→</span>
+            </div>
+            <p class="join__desc">Ride photos, routes, and the texture of what we do.</p>
+            <span class="join__handle mono">@trafficislava</span>
+          </a>
+
+        </div><!-- /.join__grid -->
+
+      </div>
+    </section>
+
+    <!-- =====================================================
+      RIDE DETAIL MODAL
+      Populated dynamically by main.js when a ride is clicked.
+    ====================================================== -->
+    <div class="ride-modal" id="ride-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+      <div class="ride-modal__backdrop" id="modal-backdrop"></div>
+      <div class="ride-modal__panel">
+
+        <button class="ride-modal__close" id="modal-close" aria-label="Close">&times;</button>
+
+        <!-- Komoot embed or placeholder -->
+        <div class="ride-modal__map" id="modal-map"></div>
+
+        <div class="ride-modal__header">
+          <span class="ride-modal__type label mono" id="modal-type"></span>
+          <time class="ride-modal__date" id="modal-date"></time>
+        </div>
+
+        <h2 class="ride-modal__title" id="modal-title"></h2>
+        <p class="ride-modal__desc" id="modal-desc"></p>
+
+        <dl class="spec-list ride-modal__specs" id="modal-specs">
+          <div class="spec-row"><dt>TIME</dt><dd id="modal-time"></dd></div>
+          <div class="spec-row"><dt>MEET</dt><dd id="modal-meet"></dd></div>
+          <div class="spec-row"><dt>DISTANCE</dt><dd id="modal-distance"></dd></div>
+        </dl>
+
+        <div class="ride-modal__links">
+          <a class="ride-modal__link" id="modal-komoot" href="#" target="_blank" rel="noopener noreferrer">
+            <span>View on Komoot</span>
+            <span class="ride-modal__link-arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="ride-modal__link" id="modal-strava" href="#" target="_blank" rel="noopener noreferrer">
+            <span>Strava event</span>
+            <span class="ride-modal__link-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- =====================================================
+    FOOTER
+  ====================================================== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <span class="mono footer__brand">Traffic Is Lava &mdash; Vienna</span>
+      <span class="mono footer__copy">&copy; <span id="year"></span></span>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>

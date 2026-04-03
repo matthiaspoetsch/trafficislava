@@ -1,0 +1,88 @@
+{
+  "rides": [
+    {
+      "title": "April Morning Ride",
+      "type": "Morning Ride",
+      "date": "2026-04-06",
+      "time": "6:30 — 8:30",
+      "meet": "Wienerwald, TH Hütteldorf",
+      "distance": "~30 km",
+      "description": "First ride of the month. An hour in the forest before the week begins.",
+      "komoot": "",
+      "strava": "",
+      "status": "upcoming"
+    },
+    {
+      "title": "April Sunday Ride",
+      "type": "Sunday Ride",
+      "date": "2026-04-19",
+      "time": "08:00 — 12:00",
+      "meet": "Lainzer Tiergarten, Hermesvilla",
+      "distance": "~55 km",
+      "description": "Lainzer Tiergarten loop. Rolling hills, mixed surface, no traffic.",
+      "komoot": "",
+      "strava": "",
+      "status": "upcoming"
+    },
+    {
+      "title": "May Morning Ride",
+      "type": "Morning Ride",
+      "date": "2026-05-04",
+      "time": "6:30 — 8:30",
+      "meet": "Wienerwald, TH Hütteldorf",
+      "distance": "~30 km",
+      "description": "Early May. The forest wakes up first.",
+      "komoot": "",
+      "strava": "",
+      "status": "upcoming"
+    },
+    {
+      "title": "May Sunday Ride",
+      "type": "Sunday Ride",
+      "date": "2026-05-17",
+      "time": "08:00 — 12:00",
+      "meet": "TBA via Strava",
+      "distance": "~60 km",
+      "description": "Route TBA. Details shared on Strava one week before.",
+      "komoot": "",
+      "strava": "",
+      "status": "upcoming"
+    },
+    {
+      "title": "March Morning Ride",
+      "type": "Morning Ride",
+      "date": "2026-03-02",
+      "time": "6:30 — 8:30",
+      "meet": "Wienerwald, TH Hütteldorf",
+      "distance": "~28 km",
+      "description": "First March ride. Cold start, dry trails.",
+      "komoot": "",
+      "strava": "",
+      "status": "past"
+    },
+    {
+      "title": "February Sunday Ride",
+      "type": "Sunday Ride",
+      "date": "2026-02-15",
+      "time": "08:00 — 12:00",
+      "meet": "Lainzer Tiergarten, Hermesvilla",
+      "distance": "~50 km",
+      "description": "Mid-February loop through Lainzer Tiergarten. Mud season in full effect.",
+      "komoot": "",
+      "strava": "",
+      "status": "past"
+    },
+    {
+      "title": "February Morning Ride",
+      "type": "Morning Ride",
+      "date": "2026-02-02",
+      "time": "6:30 — 8:30",
+      "meet": "Wienerwald, TH Hütteldorf",
+      "distance": "~30 km",
+      "description": "First ride back after January. Quiet trails, sharp air.",
+      "komoot": "",
+      "strava": "",
+      "status": "past"
+    }
+  ]
+}
