@@ -1320,8 +1320,8 @@ body::after {
 
 .ride-modal__map iframe {
   width: 100%;
-  height: calc(100% + 64px);
-  margin-top: -64px;
+  height: calc(100% + 70px);
+  margin-top: -70px;
   border: none;
   display: block;
 }
@@ -1469,6 +1469,11 @@ body::after {
   }
 
   .ride-modal__map { height: 280px; }
+
+  .ride-modal__map iframe {
+    height: 100%;
+    margin-top: 0;
+  }
 
   .ride-modal__links { grid-template-columns: 1fr; }
 }
