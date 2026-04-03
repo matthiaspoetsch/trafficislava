@@ -1,0 +1,15 @@
+{
+  "rides": [
+    {
+      "meet": "Studio Moser",
+      "komoot": "<iframe src=\"https://www.komoot.com/de-de/tour/2836884403/embed?share_token=a8FednQpXsAzddegtQ8di66giajHbh7dg0xFi3T6KkIwmR19H2&profile=1\" width=\"100%\" height=\"700\" frameborder=\"0\" scrolling=\"no\"></iframe>",
+      "time": "9:00–13:00",
+      "date": "2026-04-06",
+      "status": "upcoming",
+      "distance": "60km/1.000hm",
+      "title": "Easter Ride",
+      "type": "Sunday Ride",
+      "description": "Test-Ride"
+    }
+  ]
+}
